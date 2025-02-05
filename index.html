@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rai Tech University</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://raitechuniversity.in/wp-content/uploads/2024/02/RTU-Logo-1536x303.png" alt="">
+                <!-- <span>Rai Tech University</span> -->
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#campus">Campus</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Unlock Your Future at Rai Technology University!</h1>
+            <p>Admissions Open for 2024! 🌟</p>
+            <div class="hero-buttons">
+                <a href="#programs"><button class="btn primary">Apply Now</button></a>
+                <a href=""><button class="btn secondary">Download Brochure</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs" id="programs">
+        <h2>Our Programs</h2>
+        <p class="section-desc">Choose from our wide range of undergraduate and postgraduate programs</p>
+        
+        <div class="program-tabs">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="ug">Undergraduate</button>
+                <button class="tab-btn" data-tab="pg">Postgraduate</button>
+            </div>
+
+            <div class="tab-content active" id="ug">
+                <div class="program-cards">
+                    <div class="program-card">
+                        <h3>B. Tech(Advance) in collaboration with IBM – Computer Science & Engineering
+                        </h3>
+                        <p>Duration: 4 Years</p>
+                        <button onclick="openPopup()" class="btn primary">Apply Now</button>
+                    </div>
+                    <div class="program-card">
+                        <h3>B. Tech(Advance) in collaboration with IBM – Information Technology</h3>
+                        <p>Duration: 4 Years</p>
+                        <button onclick="openPopup()" class="btn primary">Apply Now</button>
+                    </div>
+                    <div class="program-card">
+                        <h3>B.Pharm. – Bachelor of Pharmacy</h3>
+                        <p>Duration: 4 Years</p>
+                        <button onclick="openPopup()" class="btn primary">Apply Now</button>
+                    </div>
+                    <div class="program-card">
+                        <h3>B.Sc.(Hons.) – Biotechnology</h3>
+                        <p>Duration: 3 Years</p>
+                        <button onclick="openPopup()" class="btn primary">Apply Now</button>
+                    </div>
+                    <div class="program-card">
+                        <h3>B.Sc (Hons.) – Microbiology</h3>
+                        <p>Duration: 3 Years</p>
+                        <button onclick="openPopup()" class="btn primary">Apply Now</button>
+                    </div>
+                    <div class="program-card">
+                        <h3>BBA (Hons.) – Digital Marketing / Applied HR / Finance / Marketing</h3>
+                        <p>Duration: 3 Years</p>
+                        <button onclick="openPopup()" class="btn primary">Apply Now</button>
+                    </div>
+                    <div class="program-card">
+                        <h3>B.Sc. (Hons.) – Information Technology</h3>
+                        <p>Duration: 3 Years</p>
+                        <button onclick="openPopup()" class="btn primary">Apply Now</button>
+                    </div>
+                    <div class="program-card">
+                        <h3>BCA (Hons.) – Web Design & Multimedia</h3>
+                        <p>Duration: 3 Years</p>
+                        <button onclick="openPopup()" class="btn primary">Apply Now</button>
+                    </div>
+                    <div class="program-card">
+                        <h3>B.Tech.- Computer Science Engineering</h3>
+                        <p>Duration: 4 Years</p>
+                        <button onclick="openPopup()" class="btn primary">Apply Now</button>
+                    </div>
+                    <div class="program-card">
+                        <h3>B-Tech.Information Technology</h3>
+                        <p>Duration: 4 Years</p>
+                        <button onclick="openPopup()" class="btn primary">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="pg">
+                <div class="program-cards">
+                    <div class="program-card">
+                        <h3>MBA (Advance) in collaboration with IBM</h3>
+                        <p>Duration: 2 Years</p>
+                        <button onclick="openPopup()" class="btn primary">Apply Now</button>
+                    </div>
+                    <div class="program-card">
+                        <h3>MBA – HR / Finance / Marketing / Rural Management / Business Analyst</h3>
+                        <p>Duration: 2 Years</p>
+                        <button onclick="openPopup()" class="btn primary">Apply Now</button>
+                    </div>
+                    <div class="program-card">
+                        <h3>MCA- Master in Computer Application</h3>
+                        <p>Duration: 2 Years</p>
+                        <button onclick="openPopup()" class="btn primary">Apply Now</button>
+                    </div>
+                    <div class="program-card">
+                        <h3>M.Sc – Biotechnology
+                        </h3>
+                        <p>Duration: 2 Years</p>
+                        <button onclick="openPopup()" class="btn primary">Apply Now</button>
+                    </div>
+                    <div class="program-card">
+                        <h3>M.Sc – Microbiology</h3>
+                        <p>Duration: 2 Years</p>
+                        <button onclick="openPopup()" class="btn primary">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Gallery -->
+    <section class="campus" id="campus">
+        <h2>Campus Life</h2>
+        <p class="section-desc">Experience our world-class facilities and vibrant campus culture</p>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="addm.jpeg" alt="Campus 1">
+            </div>
+            <div class="gallery-item">
+                <img src="new_build.jpeg" alt="Campus 2">
+            </div>
+            <div class="gallery-item">
+                <img src="library.jpeg" alt="Campus 3">
+            </div>
+            <div class="gallery-item">
+                <img src="clg.jpeg" alt="Campus 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+91 9035053490</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>admission@raitechuniversity.in</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>11th Mile, Doddaballpur-Nelamangla Road, Kadanur Post, Doddaballapur Taluk, Bengaluru-561204</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="admissionForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <select required>
+                        <option value="">Select Program</option>
+                        <option value="btech-cs">B. Tech(Advance) in collaboration with IBM – Computer Science & Engineering</option>
+                        <option value="btech-it">B. Tech(Advance) in collaboration with IBM – Information Technology</option>
+                        <option value="mtech-cs">B.Pharm. – Bachelor of Pharmacy</option>
+                        <option value="mtech-cs">B.Sc.(Hons.) – Biotechnology</option>
+                        <option value="mtech-cs">B.Sc (Hons.) – Microbiology</option>
+                        <option value="mtech-cs">BBA (Hons.) – Digital Marketing / Applied HR / Finance / Marketing</option>
+                        <option value="mtech-cs">B.Sc. (Hons.) – Information Technology</option>
+                        <option value="mtech-cs">BCA (Hons.) – Web Design & Multimedia</option>
+                        <option value="mtech-cs">B.Tech.- Computer Science Engineering</option>
+                        <option value="mtech-cs">MBA (Advance) in collaboration with IBM</option>
+                        <option value="mtech-cs">MBA – HR / Finance / Marketing / Rural Management / Business Analyst</option>
+                        <option value="mtech-cs">MCA- Master in Computer Application</option>
+                        <option value="mtech-cs">M.Sc – Biotechnology</option>
+                        <option value="mtech-cs">M.Sc – Microbiology</option>
+                    </select>
+                    <button type="submit" class="btn primary">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Rai Technology University</span>
+                </div>
+                <p>Empowering future leaders through technology and innovation</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#campus">Campus</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Rai Technology University. All rights reserved.</p>
+        </div>
+    </footer>
+
+<div class="apply">
+
+</div>
+
+  
+  <div id="popup" class="popup">
+    <button id="close" onclick="closePopup()" >X</button>
+    <div class="contact-form">
+        <form id="admissionForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <select required>
+                <option value="">Select Program</option>
+                <option value="btech-cs">B. Tech(Advance) in collaboration with IBM – Computer Science & Engineering</option>
+                <option value="btech-it">B. Tech(Advance) in collaboration with IBM – Information Technology</option>
+                <option value="mtech-cs">B.Pharm. – Bachelor of Pharmacy</option>
+                <option value="mtech-cs">B.Sc.(Hons.) – Biotechnology</option>
+                <option value="mtech-cs">B.Sc (Hons.) – Microbiology</option>
+                <option value="mtech-cs">BBA (Hons.) – Digital Marketing / Applied HR / Finance / Marketing</option>
+                <option value="mtech-cs">B.Sc. (Hons.) – Information Technology</option>
+                <option value="mtech-cs">BCA (Hons.) – Web Design & Multimedia</option>
+                <option value="mtech-cs">B.Tech.- Computer Science Engineering</option>
+                <option value="mtech-cs">MBA (Advance) in collaboration with IBM</option>
+                <option value="mtech-cs">MBA – HR / Finance / Marketing / Rural Management / Business Analyst</option>
+                <option value="mtech-cs">MCA- Master in Computer Application</option>
+                <option value="mtech-cs">M.Sc – Biotechnology</option>
+                <option value="mtech-cs">M.Sc – Microbiology</option>
+            </select>
+            <button  class="btn primary">Submit Application</button>
+        </form>
+    </div>
+
+  </div>
+  <button onclick="openPopup()">Open Popup</button>
+  
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
