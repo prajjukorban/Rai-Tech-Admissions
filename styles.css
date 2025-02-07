@@ -376,6 +376,8 @@ footer {
     .contact-container {
         grid-template-columns: 1fr;
     }
+
+
 }
 
 @media (max-width: 480px) {
@@ -386,6 +388,14 @@ footer {
     .program-card {
         padding: 1.5rem;
     }
+
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 90vw;
+    }
+
 }
 
 .popup {
